@@ -10,7 +10,6 @@
 <body>
   <script>
     if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-      window.onorientationchange = function() {
         if (typeof(window.orientation) == "undefined") {
           window.location = "client.html";
         } else if (window.orientation === 0) {
@@ -20,7 +19,6 @@
         } else {
             window.location = "client.html";
         }
-      };
     } else {
     window.location = "client.html";
     }
