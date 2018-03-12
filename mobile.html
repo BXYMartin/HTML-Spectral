@@ -291,11 +291,12 @@
 				}
 
 				ul.actions li>* {
-					width: 60%;
+					width: 200px;
 				}
+
 			</style>
 
-			<!--[if lte IE 8]>
+	<!--[if lte IE 8]>
 	<style type="text/css">
 		html,body{width:100%; height:100%; overflow:scroll}
 		.section-btn{display:none;}
@@ -621,22 +622,26 @@
 			},
 		});
 
-		if (window.orientation != 0) {
-			var obj = document.getElementById('orientation');
-			alert('横屏内容太少啦，请使用竖屏观看！');
-			obj.style.display = 'block';
+		if (typeof(window.orientation) == "undefined") {
+		} else if (window.orientation === 0) {
+
+		} else if (window.orientation === 180) {
+
+		} else{
+					window.location = "client.html";
 		}
 
 		window.onorientationchange = function() {
-			var obj = document.getElementById('orientation');
+			if (typeof(window.orientation) == "undefined") {
+			} else if (window.orientation === 0) {
 
-			if (window.orientation == 0) {
-				obj.style.display = 'none';
+			} else if (window.orientation === 180) {
+
 			} else {
-				alert('横屏内容太少啦，请使用竖屏观看！');
-				obj.style.display = 'block';
+						window.location = "client.html";
 			}
 		};
+
 	</script>
 </body>
 

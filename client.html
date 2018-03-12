@@ -165,5 +165,15 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script>
+			window.onorientationchange = function() {
+				if (typeof(window.orientation) == "undefined") {
+				} else if (window.orientation === 0) {
+					window.location = "mobile.html";
+				} else if (window.orientation === 180) {
+					window.location = "mobile.html";
+				}
+			};
+		</script>
 	</body>
 </html>
