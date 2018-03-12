@@ -1,0 +1,254 @@
+.container {
+  background: #fdfdfd;
+  padding: auto;
+  margin: auto auto;
+  border-radius: 0.2rem;
+  counter-reset: pagination;
+  text-align: center;
+}
+.container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.container ul {
+  width: 100%;
+}
+
+.xlarge {
+  width: 65rem;
+}
+
+.large {
+  width: 45rem;
+}
+
+.middle {
+  /*width: 32rem;*/
+}
+
+
+.xsmall {
+  width: 14rem;
+}
+
+.container
+ul {
+  list-style: none;
+  display: inline;
+  padding-left: 0px;
+}
+
+.container
+li {
+  counter-increment: pagination;
+  list-style: none;
+  display: inline;
+  padding-left: 0px;
+}
+.container
+li:hover a {
+  color: #fdfdfd;
+  background-color: #1d1f20;
+  border: solid 1px #1d1f20;
+}
+.container
+li.active a {
+  color: #fdfdfd;
+  background-color: #1d1f20;
+  border: solid 1px #1d1f20;
+}
+.container
+li:first-child {
+  float: left;
+}
+.container
+li:first-child a:after {
+  content: "<";
+}
+.container
+li:nth-child(2) {
+  counter-reset: pagination;
+}
+.container
+li:last-child {
+  float: right;
+}
+.container
+li:last-child a:after {
+  content: ">";
+}
+.container
+li a {
+  border: solid 1px #d6d6d6;
+  border-radius: 0.2rem;
+  color: #7d7d7d;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 0.5rem 0.9rem;
+}
+.container
+li a:after {
+  content: " " counter(pagination) " ";
+}
+
+.container
+.large li a {
+  display: none;
+}
+.container
+.large li:first-child a {
+  display: inline-block;
+}
+.container
+.large li:first-child a:after {
+  content: "<";
+}
+.container
+.large li:nth-child(2) a {
+  display: inline-block;
+}
+.container
+.large li:nth-child(3) a {
+  display: inline-block;
+}
+.container
+.large li:nth-child(4) a {
+  display: inline-block;
+}
+.container
+.large li:nth-child(5) a {
+  display: inline-block;
+}
+.container
+.large li:nth-child(6) a {
+  display: inline-block;
+}
+.container
+.large li:nth-child(7) a {
+  display: inline-block;
+}
+.container
+.large li:nth-child(8) a {
+  display: inline-block;
+}
+.container
+.large li:last-child a {
+  display: inline-block;
+}
+.large li:last-child a:after {
+  content: ">";
+}
+.container
+.large li:nth-last-child(2) a {
+  display: inline-block;
+}
+.container
+.large li:nth-last-child(3) {
+  display: inline-block;
+}
+.container
+.large li:nth-last-child(3):after {
+  padding: 0 1rem;
+  content: "  ...";
+}
+
+.container
+.middle li a {
+  display: none;
+}
+.container
+.middle li:first-child a {
+  display: inline-block;
+}
+.container
+.middle li:first-child a:after {
+  content: "<";
+}
+.container
+.middle li:last-child a {
+  display: inline-block;
+}
+.container
+.middle li:last-child a:after {
+  content: ">";
+}
+.container
+.middle li:nth-child(2) a {
+  display: inline-block;
+}
+.container
+.middle li:nth-child(3) a {
+  display: inline-block;
+}
+.container
+.middle li:nth-child(4) a {
+  display: inline-block;
+}
+.container
+.middle li:nth-child(5) a {
+  display: inline-block;
+}
+.container
+.middle li:nth-last-child(2) a {
+  display: inline-block;
+}
+.container
+.middle li:nth-last-child(3) {
+  display: inline-block;
+}
+.container
+.middle li:nth-last-child(3):after {
+  padding: 0 1rem;
+  content: "  ...";
+}
+
+.container
+.small li {
+  display: none;
+}
+.container
+.small li:first-child {
+  width: 50%;
+  display: inline;
+}
+.container
+.small li:first-child a:after {
+  content: "<";
+}
+.container
+.small li:last-child {
+  display: inline;
+}
+.container
+.small li:last-child a:after {
+  content: ">";
+}
+
+.container
+.xsmall li {
+  display: none;
+}
+.container
+.xsmall li.active {
+  display: inline;
+}
+.container
+.xsmall li:first-child {
+  display: inline;
+}
+.container
+.xsmall li:first-child a:after {
+  content: "<";
+}
+.container
+.xsmall li:last-child {
+  display: inline;
+}
+.container
+.xsmall li:last-child a:after {
+  content: ">";
+}
+}
